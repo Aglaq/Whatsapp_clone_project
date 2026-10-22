@@ -1,5 +1,6 @@
 :root {
-  --dark-gray: rgb(160, 160, 160);
+  --very-dark-gray: rgb(120, 120, 120);
+  --dark-gray: rgb(170, 170, 170);
   --gray: rgb(180, 180, 180);
   --light-gray: rgb(220, 220, 220);
 }
@@ -46,8 +47,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 2fr 1fr 15fr 2fr;
-  padding: 10px;
-  height: 90vh;
+  height: 99vh;
 }
 
 h1 {
@@ -71,9 +71,15 @@ h1 {
   background-color: var(--dark-gray);
 }
 
+#logo-icon,
 .icon {
   width: 20px;
   height: auto;
+}
+
+.icon {
+  filter: invert(47%) sepia(0%) saturate(0%) hue-rotate(0deg) brightness(47%)
+    contrast(100%);
 }
 
 #profilebar {
@@ -150,9 +156,28 @@ input {
   overflow: scroll;
 }
 
-.chatwindow {
+#chatwindow {
   grid-area: 3 / 2 / span 2 / span 1;
-  background-color: yellow;
+  background-image: url("images/background.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+
+.message {
+  background-color: white;
+  align-self: flex-start;
+  width: 45%;
+  margin: 20px 10px;
+  padding: 5px 10px;
+}
+
+.mymessage {
+  background-color: rgb(183, 244, 183);
+  align-self: flex-end;
 }
 
 #textingbar {
