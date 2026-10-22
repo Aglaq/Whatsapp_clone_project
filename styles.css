@@ -61,7 +61,8 @@ h2 {
   font-weight: normal;
 }
 
-h2 + p {
+h2 + p,
+h2 + div {
   font-size: 14px;
   padding-top: 5px;
 }
@@ -73,6 +74,11 @@ input {
   border: none;
   font-size: 17px;
   width: 90%;
+}
+
+::placeholder {
+  color: var(--gray);
+  opacity: 1;
 }
 
 .profile-picture {
@@ -94,6 +100,7 @@ input {
 .time-of-message {
   color: var(--dark-gray);
   margin-right: 10px;
+  font-size: 14px;
 }
 
 .contact {
@@ -128,6 +135,14 @@ input {
     brightness(31.4%) contrast(50%);
 }
 
+.tick {
+  width: 16px;
+  height: auto;
+  padding-right: 5px;
+  filter: invert(34%) sepia(56%) saturate(2259%) hue-rotate(198deg)
+    brightness(91%) contrast(105%);
+}
+
 .grouped-icons img {
   padding-left: 20px;
 }
@@ -136,6 +151,10 @@ input {
 #logo-icon {
   width: 20px;
   height: auto;
+}
+
+.ticked-message {
+  display: flex;
 }
 
 #logo-icon {
