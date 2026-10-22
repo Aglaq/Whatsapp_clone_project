@@ -48,7 +48,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 2fr 1fr 15fr 2fr;
-  height: 99vh;
+  height: 100vh;
 }
 
 h1 {
@@ -70,7 +70,7 @@ h2 + div {
 input {
   float: left;
   padding: 6px;
-  margin: 8px 16px;
+  margin: 8px 15px;
   border: none;
   font-size: 17px;
   width: 90%;
@@ -94,7 +94,7 @@ input {
   width: var(--contact-picture-width);
   height: auto;
   border-radius: calc(var(--contact-picture-width) / 2);
-  margin: 5px 10px;
+  margin: 5px 15px;
 }
 
 .time-of-message {
@@ -179,7 +179,8 @@ input {
 
 #headbar > div,
 #profilebar > div,
-#chatbar > div {
+#chatbar > div,
+#textingbar > img {
   margin: 5px 15px;
 }
 
