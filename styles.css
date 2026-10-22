@@ -48,7 +48,7 @@ main {
   grid-template-rows: 1fr 2fr 1fr 15fr 2fr;
   grid-gap: 1px;
   padding: 10px;
-  height: 100vh;
+  height: 90vh;
 }
 
 h1 {
@@ -89,10 +89,43 @@ h1 {
   margin: 5px 25px;
 }
 
+.contact-picture {
+  --contact-picture-width: 60px;
+  width: var(--contact-picture-width);
+  height: auto;
+  border-radius: calc(var(--contact-picture-width) / 2);
+  margin: 5px 10px;
+}
+
 #profilebar,
 #searchbar,
-#list {
+#contact-list {
   border-right: 1px solid darkolivegreen;
+}
+
+input {
+  float: left;
+  padding: 6px;
+  margin: 8px 16px;
+  border: none;
+  font-size: 17px;
+  width: 90%;
+}
+
+.contact {
+  /* margin: 10px 0; */
+  padding: 10px 0;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  display: flex;
+  /* align-items: center; */
+  border-top: 1px solid var(--gray);
+  border-bottom: 1px solid var(--gray);
+}
+
+.contact img + div {
+  flex-grow: 1;
 }
 
 #chatbar {
@@ -100,14 +133,23 @@ h1 {
   background-color: var(--gray);
 }
 
-.searchbar {
+#searchbar {
   grid-area: 3 / 1 / span 1 / span 1;
-  background-color: purple;
+  background-color: var(--light-gray);
 }
 
-.list {
+.time-of-message {
+  color: var(--dark-gray);
+  margin-right: 10px;
+}
+
+#contact-list {
   grid-area: 4 / 1 / span 2 / span 1;
   background-color: pink;
+  box-sizing: border-box;
+  background-color: white;
+  color: black;
+  overflow: scroll;
 }
 
 .chatwindow {
