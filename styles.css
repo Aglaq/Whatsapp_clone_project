@@ -46,7 +46,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr 2fr 1fr 15fr 2fr;
-  grid-gap: 1px;
   padding: 10px;
   height: 90vh;
 }
@@ -60,7 +59,8 @@ h1 {
 #headbar div,
 #profilebar,
 #chatbar,
-.picture-name {
+.picture-name,
+#textingbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -71,7 +71,7 @@ h1 {
   background-color: var(--dark-gray);
 }
 
-.headbar-icon {
+.icon {
   width: 20px;
   height: auto;
 }
@@ -100,7 +100,7 @@ h1 {
 #profilebar,
 #searchbar,
 #contact-list {
-  border-right: 1px solid darkolivegreen;
+  border-right: 1px solid var(--dark-gray);
 }
 
 input {
@@ -113,13 +113,11 @@ input {
 }
 
 .contact {
-  /* margin: 10px 0; */
   padding: 10px 0;
   box-sizing: border-box;
   background-color: white;
   color: black;
   display: flex;
-  /* align-items: center; */
   border-top: 1px solid var(--gray);
   border-bottom: 1px solid var(--gray);
 }
@@ -157,7 +155,7 @@ input {
   background-color: yellow;
 }
 
-.textbar {
+#textingbar {
   grid-area: 5 / 2 / span 1 / span 1;
-  background-color: brown;
+  background-color: var(--gray);
 }
