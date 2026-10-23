@@ -72,6 +72,7 @@ input {
   padding: 6px;
   margin: 8px 15px;
   border: none;
+  border-radius: 5px;
   font-size: 17px;
   width: 90%;
 }
@@ -130,11 +131,6 @@ input {
   align-self: flex-end;
 }
 
-.icon {
-  filter: invert(68.6%) sepia(0%) saturate(0%) hue-rotate(0deg)
-    brightness(31.4%) contrast(50%);
-}
-
 .tick {
   width: 16px;
   height: auto;
@@ -143,18 +139,27 @@ input {
     brightness(91%) contrast(105%);
 }
 
+.ticked-message {
+  display: flex;
+}
+
+.icon {
+  filter: invert(68.6%) sepia(0%) saturate(0%) hue-rotate(0deg)
+    brightness(31.4%) contrast(50%);
+}
+
 .grouped-icons img {
   padding-left: 20px;
 }
 
-.icon,
-#logo-icon {
-  width: 20px;
+.icon {
+  width: 25px;
   height: auto;
 }
 
-.ticked-message {
-  display: flex;
+.headbar-icon,
+#logo-icon {
+  width: 20px;
 }
 
 #logo-icon {
