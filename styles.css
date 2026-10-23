@@ -109,7 +109,7 @@ input {
 .profile-picture {
   --profile-picture-width: 50px;
   width: var(--profile-picture-width);
-  height: auto;
+  height: var(--profile-picture-width);
   border-radius: calc(var(--profile-picture-width) / 2);
   margin: 5px 15px;
 }
@@ -117,7 +117,7 @@ input {
 .contact-picture {
   --contact-picture-width: 60px;
   width: var(--contact-picture-width);
-  height: auto;
+  height: var(--contact-picture-width);
   border-radius: calc(var(--contact-picture-width) / 2);
   margin: 5px 15px;
 }
